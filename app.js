@@ -36,7 +36,7 @@ app.post("/",function(req,res){
                 res.send("error occured")
             }
             else{
-                console.log("Done")
+                res.console.log("Done")
             }
         })
     }
