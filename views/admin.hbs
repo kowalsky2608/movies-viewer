@@ -6,8 +6,7 @@
     <title>Movies Viewer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    <script src="../app.js"></script>
-    <script src="../public/tilesCreator.js" defer></script>
+    <script src="tileCreator.js" defer></script>
   </head>
   <body>
     <header><h3>Movies Viewer</h3></header>
@@ -16,6 +15,14 @@
         <input type="file" name="filename">
         <input type="submit" value="upload">
       </form>
+        <form action="/">
+        <input type="text" id="title">
+        <input type="text" id="poster">
+        <input type="text" id="desc">
+        <input type="text" id="trailer">
+        <button type="button" onclick="tileCreator()"></button>
+      </form>
+      <div id="tile"></div>
     </main>  
   </body>
 </html>

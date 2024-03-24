@@ -41,7 +41,7 @@ app.post("/",function(req,res){
                 res.send("error occured")
             }
             else{
-                res.send("Done")
+                res.redirect('/')
                 console.log("Done")
             }
         })

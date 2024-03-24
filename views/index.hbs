@@ -6,20 +6,26 @@
     <title>Movies Viewer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    <script src="messageScript.js" defer></script>
+    <script src="movieView.js" defer></script>
   </head>
   <body>
     <header><h3>Movies Viewer</h3></header>
     <main>
-      <video width="320" height="240" controls>
-        <source src="uploads/movie.mp4" type="video/mp4">
-      </video>
-            <video width="320" height="240" controls>
-        <source src="uploads/movie2.mp4" type="video/mp4">
-      </video>
-            <video width="320" height="240" controls>
-        <source src="uploads/movie3.mp4" type="video/mp4">
-      </video>
+      <div class="info"><h1>Kliknij w plakat by zobaczyć zwiastun!</h1></div>
+      <div class="tiles">
+        <div class="tile" id="tile1">
+          <div class="tile-header">Garfield</div>
+          <img src="uploads/garfield.jpg" alt="poster" onclick="redirect(1)">
+        </div>
+              <div class="tile" id="tile2">
+          <div class="tile-header">Kung Fu Panda</div>
+          <img src="uploads/panda.jpg" alt="poster" onclick="redirect(2)">
+        </div>
+              <div class="tile" id="tile3">
+          <div class="tile-header">Spider-man</div>
+          <img src="uploads/spider.jpg" alt="poster" onclick="redirect(3)">
+        </div>
+      </div>
     </main>  
   </body>
 </html>

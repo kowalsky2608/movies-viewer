@@ -16,8 +16,20 @@ header {
 
 h1,h2,h3,h4,h5{margin: 0;}
 
+img{
+  margin-top: 20px;
+  max-height: 80%;
+  max-width: 100%;
+}
+
 main {
+  background-image: url('assets/background.jpg');
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
   width: 100%;  
+  height:700px;
 }
 
 td{
@@ -32,6 +44,37 @@ input{
   display: inline-block;
   height: 50px;
   width: 100%;
+}
+
+.info{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  color: white;
+}
+
+.tiles{
+  margin-top: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  
+}
+
+.tile{
+  background-color: #0000ff1c;
+  margin: 10px 0 10px 0;
+  height: 500px;
+  width: calc(100%/3);
+}
+
+.tile:hover{
+  filter: drop-shadow(0 0 0.75rem crimson);
+}
+
+.tile-header{
+  background-color: #ffffff69;
 }
 
 .main-menu-content{
@@ -59,8 +102,6 @@ input{
   }
   }
 
-.table-container{
-}
 
 #table-content{
   float: left;
