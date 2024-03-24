@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Movies Viewer</title>
+    <style>
+      body{background-color: white;}
+    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <script src="tileCreator.js" defer></script>
@@ -14,13 +17,6 @@
       <form method="post" enctype="multipart/form-data" action="/">
         <input type="file" name="filename">
         <input type="submit" value="upload">
-      </form>
-        <form action="/">
-        <input type="text" id="title">
-        <input type="text" id="poster">
-        <input type="text" id="desc">
-        <input type="text" id="trailer">
-        <button type="button" onclick="tileCreator()"></button>
       </form>
       <div id="tile"></div>
     </main>  
