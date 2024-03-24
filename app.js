@@ -27,11 +27,11 @@ app.listen(port, () => {
 
 app.use (upload())
 
-app.get("/admin",function(req,res){
+app.get("/",function(req,res){
     res.sendFile(__dirname+"/views/admin.hbs");
 })
 
-app.post("/admin",function(req,res){
+app.post("/",function(req,res){
     if(req,res){
         const file = req.files.filename,
         filename = file.name;
